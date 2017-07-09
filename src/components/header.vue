@@ -1,6 +1,7 @@
 <template>
     <div class="header">
         <div>{{msg}}</div>
+        <search></search>
     </div>
 </template>
 <style>
@@ -9,12 +10,18 @@
         background-color: #157bf8;
         border-bottom: 1px solid #ccc;
     }
+    .header .search{
+        float: right;
+    }
 </style>
 <script>
-export default{
-    data: function () {
-        return {msg: 'Lenovo'}
-    },
-    components: {}
-}
+    import Search from './search.vue';
+    export default{
+        data: function () {
+            return {msg: 'Lenovo'}
+        },
+        components: {
+            search: Search
+        }
+    }
 </script>
