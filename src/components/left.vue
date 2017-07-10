@@ -1,21 +1,23 @@
 <template>
     <div class="left">
         <a>企业空间</a>
-        <a>个人文件</a>
+        <a v-if="member">个人文件</a>
         <a>回收站</a>
     </div>
 </template>
 
 <style>
-    .left{
+    .left a{
         float: left;
-        width: 180px;
-        height: 100%;
-        background-color: red;
+        clear: both;
     }
 </style>
 <script>
     module.exports = {
-
+        data: function () {
+            return {
+                member: true
+            }
+        }
     }
 </script>

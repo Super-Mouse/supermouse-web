@@ -4,11 +4,7 @@
     </div>
 </template>
 <style>
-    .center{
-        height: 100%;
-        margin-left: 180px;
-        background-color: yellow;
-    }
+
 </style>
 <script>
     export default{

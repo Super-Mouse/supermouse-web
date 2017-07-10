@@ -1,4 +1,17 @@
 .main {
   height: 100%; }
+  .main .header {
+    height: 56px;
+    background-color: #157bf8;
+    border-bottom: 1px solid #ccc; }
+  .main .left {
+    float: left;
+    width: 180px;
+    height: 100%;
+    background-color: red; }
+  .main .center {
+    height: 100%;
+    margin-left: 180px;
+    background-color: yellow; }
 
 /*# sourceMappingURL=layout.css.map */

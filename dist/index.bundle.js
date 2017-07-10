@@ -10565,13 +10565,24 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n", ""]);
     },
     methods: {
         toDo: function () {
-            __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 27)).then(module => {
-                Advanced = module.default;
-            });
-
+            this.advanced = "first";
+            //                import('./advanced_search.vue').then(module => {
+            //                    Advanced = module.default;
+            //                });
             //                require.ensure([], function(require) {
             //                    var foo = require('./advanced_search.vue');
             //                }, 'custom-chunk-name');
+        }
+    },
+    components: {
+        //            first: function () {
+        //                //异步组件写法
+        //                import('./advanced_search.vue').then(module => {
+        //                    return module;
+        //                });
+        //            }
+        first: function () {
+            return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 27));
         }
     }
 });
@@ -10592,7 +10603,9 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     on: {
       "click": _vm.toDo
     }
-  }, [_vm._v("高级搜索")]), _vm._v(" "), _c('advanced')], 1)
+  }, [_vm._v("高级搜索")]), _vm._v(" "), _c(_vm.advanced, {
+    tag: "component"
+  })], 1)
 }
 var staticRenderFns = []
 render._withStripped = true
