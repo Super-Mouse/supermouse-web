@@ -13,8 +13,7 @@
 </style>
 
 <script>
-    //console.log('The print.js module has loaded! See the network tab in dev tools...');
-    module.exports = {
+    export default {
         data: function () {
 //            return {
 //                msg: 111
