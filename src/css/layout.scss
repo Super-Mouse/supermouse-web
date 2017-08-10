@@ -1,19 +1,19 @@
 .main{
   height: 100%;
-  // 头部
+  // header
   .header{
     height: 56px;
     background-color: #157bf8;
     border-bottom: 1px solid #ccc;
   }
-  // 左侧栏
+  // left side
   .left{
     float: left;
     width: 180px;
     height: 100%;
     background-color: red;
   }
-  // 中间
+  // center
   .center{
     height: 100%;
     margin-left: 180px;
