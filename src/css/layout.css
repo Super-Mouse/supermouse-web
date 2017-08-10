@@ -11,7 +11,8 @@
     background-color: red; }
   .main .center {
     height: 100%;
-    margin-left: 180px;
-    background-color: yellow; }
+    margin-left: 180px; }
+    .main .center > div {
+      height: 100%; }
 
 /*# sourceMappingURL=layout.css.map */

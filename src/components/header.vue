@@ -10,7 +10,7 @@
     }
 </style>
 <script>
-    import Search from './search.vue';
+    import Search from './search/search.vue';
     export default{
         data: function () {
             return {msg: 'Lenovo'}

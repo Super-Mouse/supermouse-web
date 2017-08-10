@@ -1,8 +1,8 @@
 <template>
     <div class="left">
-        <a>企业空间</a>
-        <a v-if="member">个人文件</a>
-        <a>回收站</a>
+        <router-link to="/ent">企业空间</router-link>
+        <router-link to="/self">个人文件</router-link>
+        <router-link to="/favorite">我的收藏</router-link>
     </div>
 </template>
 

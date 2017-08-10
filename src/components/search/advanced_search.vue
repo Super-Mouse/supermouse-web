@@ -1,12 +1,12 @@
 <template>
     <div class="advanced-search">
-        <h1>哈哈哈哈哈</h1>
+        <h1 v-on:click="addMsg">这是：{{abc}}</h1>
     </div>
 </template>
 
 <style>
     .advanced-search{
-        width: 200px;
+        width: 173px;
         height: 300px;
         background-color: #ccc;
     }
@@ -14,11 +14,17 @@
 
 <script>
     //console.log('The print.js module has loaded! See the network tab in dev tools...');
-    module.exports = {
+    export default {
+        props: ['abc'],
         data: function () {
-//            return {
-//                msg: 111
-//            }
+            return {
+                msg: "哈哈哈"
+            }
+        },
+        methods: {
+            addMsg: function () {
+                return null;
+            }
         }
     }
 </script>
